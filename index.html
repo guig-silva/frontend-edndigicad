@@ -4,96 +4,154 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resident Evil: Parasitas e Patógenos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Os Principais Parasitas e Patógenos de Resident Evil</h1>
-    <nav>
-      <ul>
+  <header class="container-fluid sticky-top bg-dark">
+    <h1 class="text-right">Os Principais Parasitas e Patógenos de <span>Resident Evil</span></h1>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/brand.png" alt="Residnet Evil" width="30" height="24">
+        </a>
+      </div>
+      <ul class="">
         <li>
-          <a href="progenitor">Vírus Progenitor</a>
+          <a href="#progenitor">Vírus Progenitor</a>
         </li>
         <li>
-          <a href="tvirus">T-Virus</a>
+          <a href="#tvirus">T-Virus</a>
         </li>
         <li>
-          <a href="gvirus">G-Virus</a>
+          <a href="#gvirus">G-Virus</a>
         </li>
         <li>
-          <a href="tveronica">T-Veronica</a>
+          <a href="#tveronica">T-Veronica</a>
         </li>
         <li>
-          <a href="lasplagas">Las Plagas</a>
+          <a href="#lasplagas">Las Plagas</a>
         </li>
         <li>
-          <a href="uroboros">Uroboros</a>
+          <a href="#uroboros">Uroboros</a>
         </li>
         <li>
-          <a href="cvirus">C-Virus</a>
+          <a href="#cvirus">C-Virus</a>
         </li>
         <li>
-          <a href="megamiceto">Megamiceto</a>
+          <a href="#megamiceto">Megamiceto</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="progenitor">
-      <h2 >Vírus Progenitor</h2>
-      <p>
+  <main class="container-fluid align-items-start">
+
+    <section id="progenitor" class="card">
+      <h2 class="text-center">Vírus Progenitor</h2>
+      <p class="text-justify">
         O vírus Progenitor foi descoberto nos anos 60 por Dr. Edward Ashford, Dr. James Marcus e pelo Lorde Ozwell Spencer, fundadores da Umbrella Corporation. Este vírus é a base para a maioria dos outros vírus importantes vistos na franquia e foi a motivação para a própria criação da Umbrella nequanto compania farmacêutica. A primeira cobaia humana bem-sucedida a ser infectada pelo vírus Progenitor foi uma garota chamada Lisa Trevor. Lisa é encontrada pelos membros do S.T.A.R.S. (Special Tactics and Rescue Service) vagando pelos arredores da Mansão Spencer, em julho de 1998.
       </p>
-      <img src="./img/progenitor.jpeg" alt="Flor Sonnentreppe, de onde é extraído o vírus Progenitor." width="50%">
-    </section id="tvirus">
-    <section>
-      <h2>T-Virus</h2>
-      <p>
+      <picture class="card" style = "width: 50%">
+        <div class="card-body">
+          <img src="./img/progenitor.jpeg" class="card-img-top" alt="Flor Sonnentreppe, de onde é extraído o vírus Progenitor." width="50%">
+          <figcaption class="card-text">A flor Sonnentreppe, de onde é extraído o vírus Progenitor</figcaption>
+        </div>
+      </picture>
+    </section>
+
+    <section  id="tvirus" class="card">
+      <h2 class="text-center">T-Virus</h2>
+      <p class="text-justify">
         O vírus Tyrant é um vírus mutagênico criado pelo Dr. James Marcus nos anos 70, ao misturar o Progenitor Virus com DNA de sanguessugas. Este patógeno foi utilizado pela Umbrella para criar as principais Armas Bio-Orgânicas (do inglês, B.O.W.s) vistas na franquia, e foi a fonte da epidemia de zumbis que culminou na destruição da Mansão Spencer, em julho de 1998, e posteriormente da cidade de Raccoon City, em setembro de 1998.
       </p>
-      <img src="./img/tvirus.jpg" alt="Claire Redfield enfrentando um Licker, um tipo de mutação secundária em zumbis." width="50%">
+      <picture class="card" style = "width: 50%">
+        <div class="card-body">
+          <img src="./img/tvirus.jpg" class="card-img-top" alt="Claire Redfield enfrentando um Licker, um tipo de mutação secundária em zumbis." width="50%">
+          <figcaption class="card-text">Claire Redfield enfrentando um Licker, um tipo de mutação secundária em zumbis</figcaption>
+        </div>
+      </picture>
     </section>
-    <section id="gvirus">
-      <h2>G-Virus</h2>
-      <p>
+
+    <section id="gvirus" class="card">
+      <h2 class="text-center">G-Virus</h2>
+      <p class="text-justify">
         O vírus Golgotha foi encontrado pelo Dr. William Birkin enquanto analisava amostras extraídes de Lisa Trevor. Este vírus causa mutações extremas e incontroláveis no hospedeiro se um soro não for administrado rapidamente. As mutações estão associadas a uma capacidade regenerativa muito alta, capaz até mesmo de reanimar cadáveres. O Dr. Birkin injetou o vírus G em si mesmo para sobreviver ao ataque de soldados especiais da Umbrella enviados para recuperar amostras do patógeno. Ele passou a sofrer mutações progressivas até se tornar um monstro irreconhecível, que foi morto por Leon Kennedy e Claire Redfield em 1998. 
       </p>
-      <img src="./img/gvirus.png" alt="Dr. William Birkin após sofrer as primeiras mutações causadas pelo vírus Golgotha." width="50%">
+      <picture class="card" style = "width: 50%">
+        <div class="card-body">
+          <img src="./img/gvirus.png" class="card-img-top" alt="Dr. William Birkin após sofrer as primeiras mutações causadas pelo vírus Golgotha." width="50%">
+          <figcaption class="card-text">Dr. William Birkin após sofrer as primeiras mutações causadas pelo vírus Golgotha</figcaption>
+        </div>
+      </picture>
     </section>
-    <section id="tveronica">
-      <h2>T-Veronica</h2>
-      <p>
+
+    <section id="tveronica" class="card">
+      <h2 class="text-center">T-Veronica</h2>
+      <p class="text-justify">
         O vírus T-Veronica foi criado pela Dra. Alexia Ashford nos anos 80, ao combinar o vírus Progenitor com DNA de formiga-rainha. Como este vírus é extremamente agressivo ao hospedeiro, Alexia desenvolveu um método de aplicação que consistia em manter a cobaia em suspensão criogênica por tempo indeterminado para permitir que o T-Veronica lentamente se integrasse ao organismo. Ela testou esse método em si mesma, e após anos em animação suspensa, acorda com poderes sobrehumanos, sendo capaz de controlar as mutações causadas pelo vírus enquanto mantém a consciência. Entretanto, ela é morta por Claire Redfield em dezembro de 1998.
       </p>
-      <img src="./img/tveronica.jpg" alt="Claire Redfield enfrentando a Dra. Alexia Ashford, que sofreu mutações causadas pelo T-Veronica." width="50%">
+      <picture class="card" style = "width: 50%">
+        <div class="card-body">
+          <img src="./img/tveronica.jpg" class="card-img-top" alt="Claire Redfield enfrentando a Dra. Alexia Ashford, que sofreu mutações causadas pelo T-Veronica." width="50%">
+          <figcaption class="card-text">Claire Redfield enfrentando a Dra. Alexia Ashford, que sofreu mutações causadas pelo T-Veronica</figcaption>
+        </div>
+      </picture>
     </section>
-    <section id="lasplagas">
-      <h2>Las Plagas</h2>
-      <p>
-        As Plagas são organismos artrópodes parasitas encontrados em uma região rural da Espanha. Foram utilizados pelo culto local Los Iluminados com a inteção de infectar a população e assumir o controle do planeta. Após ingeridos ou injetados, os ovos e esporos da Plaga se desenvolvem rapidamente, buscando assumir o controle do sistema nervoso do hospedeiro. Caso creça o suficiente, se torna inpossível remover o parsita sem matar o hospedeiro. A Plaga também é capaz de induzir mutações e permite até mesmo criar híbros de humanos e animais. O agente Leon Kennedy enfrentou as Plagas em 2005, quando foi enviado em uma missão para resgatar a filha do presidente dos Estados Unidos, que havia sido sequestrada pelo culto Los Iluminados.
+
+    <section id="lasplagas" class="card">
+      <h2 class="text-center">Las Plagas</h2>
+      <p class="text-justify">
+        As Plagas são organismos artrópodes parasitas encontrados em uma região rural da Espanha. Foram utilizados pelo culto local Los Iluminados com a inteção de infectar a população e assumir o controle do planeta. Após ingeridos ou injetados, os ovos e esporos da Plaga se desenvolvem rapidamente, buscando assumir o controle do sistema nervoso do hospedeiro. Caso creça o suficiente, se torna inpossível remover o parsita sem matar o hospedeiro. A Plaga também é capaz de induzir mutações e permite até mesmo criar híbros de humanos e animais. O agente Leon Kennedy enfrentou as Plagas em 2005, quando foi enviado em uma missão para resgatar a filha do presidente dos Estados Unidos, que havia sido sequestrada pelo culto Los Iluminados. Chris Redfield e Sheva Alomar enfrentaram armas biológicas criadas com as Plagas em 2009, durante uma missão na África.
       </p>
-      <img src="./img/lasplagas.jpg" alt="Vários tipos de plagas adultas se expondo para fora do corpo do hospedeiro." width="50%">
+      <picture class="card" style = "width: 50%">
+        <div class="card-body">
+          <img src="./img/lasplagas.jpg" class="card-img-top" alt="Vários tipos de plagas adultas se expondo para fora do corpo do hospedeiro." width="50%">
+          <figcaption class="card-text">Vários tipos de plagas adultas se expondo para fora do corpo do hospedeiro</figcaption>
+        </div>
     </section>
-    <section id="uroboros">
-      <h2>Uroboros</h2>
-      <p>
-        O vírus Uroboros foi criado pelo Dr. Albert Wesker nos anos 2000, em uma base secreta na África. A localização era próxima à região de origem do vírus Progenitor, que foi utilizado de base para a criação do vírus Uroboros. Após infectar um hospedeiro, o Uroboros rapidamente se auto-replica e tenta assimilar toda a matéria orgânica disponível nas proximidades para aumentar seu tamanho. Sua principal vulnerabilidade é o calor, sendo sensível a temperaturas elevadas e ao fogo. Wesker tinha a intenção de espalhar o vírus pelo planeta, para selecionar apenas os humanos mais aptoa a viverem em um novo mundo sob sua liderança. Ele se infecta com o vírus, adquire força e resistência sobrehumanas e consegue manter a consciência, mas acaba sendo morto por Chris Redfield e Sheva Alomar em 2009, durante uma batalha em um vulcão ativo.
+
+    <section id="uroboros" class="card">
+      <h2 class="text-center">Uroboros</h2>
+      <p class="text-justify">
+        O vírus Uroboros foi criado pelo Dr. Albert Wesker nos anos 2000, em uma base secreta na África. A localização era próxima à região de origem do vírus Progenitor, que foi utilizado de base para a criação do vírus Uroboros. Após infectar um hospedeiro, o Uroboros rapidamente se auto-replica e tenta assimilar toda a matéria orgânica disponível nas proximidades para aumentar seu tamanho. Sua principal vulnerabilidade é o calor, sendo sensível a temperaturas elevadas e ao fogo. Wesker tinha a intenção de espalhar o vírus pelo planeta, para selecionar apenas os humanos mais aptoa a viverem em um novo mundo sob sua liderança. Ele se infecta com o vírus, adquire força e resistência sobrehumanas enquanto mantém a consciência, mas acaba sendo morto por Chris Redfield e Sheva Alomar em 2009.
       </p>
-      <img src="./img/uroboros.jpg" alt="Quando a infecção pelo vírus Uroboros é mal-sucedida, o patógeno produz uma massa de tentáculos que consome toda a matéria orgânica adjacente, aumentando seu tamanho." width="50%">
+      <picture class="card" style = "width: 50%">
+        <div class="card-body">
+          <img src="./img/uroboros.jpg" class="card-img-top" alt="Albert Wesker após sofrer mutações causadas pelo vírus Uroboros." width="50%">
+          <figcaption class="card-text">Albert Wesker após sofrer mutações causadas pelo vírus Uroboros</figcaption>
+        </div>
+      </picture>
+      
     </section>
-    <section id="cvirus">
-      <h2>C-Virus</h2>
-      <p>
+
+    <section id="cvirus" class="card">
+      <h2 class="text-center">C-Virus</h2>
+      <p class="text-justify">
         O vírus Crisálida foi criado pela Dra. Carla Radames nos anos 2010, ao combinar o T-Veronica com o vírus Golgotha. Dra. Radamaes trabalhava para a Família, uma fraternidade secreta de indivíduos milionários com diversos membros atuando dentro do governo estadunidense. Quando injetado diretamente na corrente sanguínea, o C-Virus é capaz de induzir mutações extremas no hospedeiro ao mesmo tempo em que preserva parte das capacidades mentais, permitindo que a cobaia siga ordens. Quando o patógeno é inalado em forma de aerosois, o hospedeiro humano se torna um zumbi, similar ao produzido pela infecção pelo T-Virus. Uma característica que distingue esse vírus dos demais, é que nenhum infectado consegue transmitir o patógeno através de mordidas. Como contém material genético do G-Virus, o C-Virus também é capaz de reanimar cadáveres. Diferentes cepas do vírus Crisálida causam diferentes mutações quando injetadas. A Família e as armas biológicas produzidas com o vírus Crisálida causaram diversos incidentes em 2012 e 2013, sendo combatidos por agentes da B.S.A.A. (Bioterrorism Security Assessment Alliance), como Chris Redfield, e por agentes especiais do governo estadunidense, como Leon Kennedy e Sherry Birkin.
       </p>
-      <img src="./img/cvirus.jpg" alt="Arma biológica marinha HAOS, criada pela Dra. Carla Radames com o objetivo de espalhar o vírus Crisálida pelos oceanos do planeta." width="50%">
+      <picture class="card" style = "width: 50%">
+        <div class="card-body">
+          <img src="./img/cvirus.jpg" class="card-img-top" alt="Dra. Carla Radames após sofrer mutações causadas pelo vírus Crisálida." width="50%">
+          <figcaption class="card-text">Dra. Carla Radames após sofrer mutações causadas pelo vírus Crisálida</figcaption>
+        </div>
+      </picture>
     </section>
-    <section id="megamiceto">
-      <h2>Megamiceto</h2>
-      <p>
-        O Megamiceto é um fungo encontrado em uma região rural da Romênia, onde forma uma supercolônia subterrânea. Ele é capaz de infectar humanos e animais, assumindo o controle do sistema nervoso do hospedeiro. O fungo pode induzir mutações extremas, como o crescimento de apêndices e órgãos adicionais. O Megamiceto é usado pelos lordes locais para manter a população da região sob controle, além de eles próprios estarem infectados. Ethan Winters enfrentou o Megamiceto em 2021, quando partiu em uma missão para resgatar sua filha, que havia sido sequestrada pela líder dos quatro lordes locais. Após derrotar os monstros criados pelo Megamiceto, Ethan descobre que a arma biológica Eveline, que havia derrotado em 2017 ao resgatar sua esposa desaparecida, havia sido produzida a partir do fungo.
+
+    <section id="megamiceto" class="card">
+      <h2 class="text-center">Megamiceto</h2>
+      <p class="text-justify">
+        O Megamiceto é um fungo encontrado em uma região rural da Romênia, onde forma uma supercolônia subterrânea. Ele é capaz de infectar humanos e animais, assumindo o controle do sistema nervoso do hospedeiro. O fungo pode induzir mutações extremas, como o crescimento de apêndices e órgãos adicionais. O Megamiceto é usado pelos lordes locais para manter a população da região sob controle, além de eles próprios estarem infectados. Em 2021, Ethan Winters partiu para a Romênia em busca de sua filha, que havia sido sequestrada pela líder dos lordes. Após enfrentar os monstros criados pelo Megamiceto, Ethan descobre que a arma biológica Eveline, que havia derrotado em 2017 ao resgatar sua esposa desaparecida, havia sido produzida a partir do fungo.
       </p>
-      <img src="./img/megamiceto.png" alt="Raíz fúngica da supercolônia de Megamiceto encontrada na Romênia, com formato similar a um feto." width="50%">
+      <picture class="card" style = "width: 50%">
+        <div class="card-body">
+          <img src="./img/megamiceto.png" class="card-img-top" alt="Ethan Winters enfrentando um dos lordes infectados pelo Megamiceto." width="50%">
+          <figcaption class="card-text">Ethan Winters enfrentando um dos lordes infectados pelo Megamiceto</figcaption>
+        </div>
+      </picture>
     </section>
   </main>
 
@@ -103,5 +161,8 @@
       Fansite criado por Guilherme Gonzaga. Todos os direitos reservados à marca Resident Evil e à sua detentora, Capcom Co., Ltd.
     </p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
