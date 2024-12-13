@@ -11,44 +11,48 @@
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-  <header class="container-fluid sticky-top bg-dark">
-    <h1 class="text-right">Os Principais Parasitas e Patógenos de <span>Resident Evil</span></h1>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./img/brand.png" alt="Residnet Evil" width="30" height="24">
-        </a>
+  <header class="container-fluid bg-light">
+    <div class="container-fluid">
+      <h1 class="container text-center">Os Principais Parasitas e Patógenos de <a class="navbar-brand col justify-content-center" href="#">
+        <img src="./img/brand.png" alt="Resident Evil" class="w-25">
+      </a></h1>
+    </div>
+    <nav class="navbar bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-item" href="#progenitor">Vírus Progenitor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tvirus">T-Virus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gvirus">G-Virus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tveronica">T-Veronica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lasplagas">Las Plagas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#uroboros">Uroboros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cvirus">C-Virus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#megamiceto">Megamiceto</a>
+          </li>
+        </ul>
       </div>
-      <ul class="">
-        <li>
-          <a href="#progenitor">Vírus Progenitor</a>
-        </li>
-        <li>
-          <a href="#tvirus">T-Virus</a>
-        </li>
-        <li>
-          <a href="#gvirus">G-Virus</a>
-        </li>
-        <li>
-          <a href="#tveronica">T-Veronica</a>
-        </li>
-        <li>
-          <a href="#lasplagas">Las Plagas</a>
-        </li>
-        <li>
-          <a href="#uroboros">Uroboros</a>
-        </li>
-        <li>
-          <a href="#cvirus">C-Virus</a>
-        </li>
-        <li>
-          <a href="#megamiceto">Megamiceto</a>
-        </li>
-      </ul>
     </nav>
   </header>
 
-  <main class="container-fluid align-items-start">
+  <main class="container-fluid align-items-start bg-black">
 
     <section id="progenitor" class="card">
       <h2 class="text-center">Vírus Progenitor</h2>
@@ -68,7 +72,7 @@
       <p class="text-justify">
         O vírus Tyrant é um vírus mutagênico criado pelo Dr. James Marcus nos anos 70, ao misturar o Progenitor Virus com DNA de sanguessugas. Este patógeno foi utilizado pela Umbrella para criar as principais Armas Bio-Orgânicas (do inglês, B.O.W.s) vistas na franquia, e foi a fonte da epidemia de zumbis que culminou na destruição da Mansão Spencer, em julho de 1998, e posteriormente da cidade de Raccoon City, em setembro de 1998.
       </p>
-      <picture class="card" style = "width: 50%">
+      <picture class="card col align-content-center" style = "width: 50%">
         <div class="card-body">
           <img src="./img/tvirus.jpg" class="card-img-top" alt="Claire Redfield enfrentando um Licker, um tipo de mutação secundária em zumbis." width="50%">
           <figcaption class="card-text">Claire Redfield enfrentando um Licker, um tipo de mutação secundária em zumbis</figcaption>
@@ -161,7 +165,7 @@
       Fansite criado por Guilherme Gonzaga. Todos os direitos reservados à marca Resident Evil e à sua detentora, Capcom Co., Ltd.
     </p>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
   <script src="./scripts/script.js"></script>
 </body>
