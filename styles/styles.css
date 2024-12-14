@@ -1,3 +1,14 @@
 h1 {
   font-family: Nosifer, sans-serif;
+  color: #2fca00;
+}
+
+footer {
+  font-family: roboto, sans-serif;
+  color: #970101
+}
+
+.btn {
+  background-color: #a80000;
+  border-radius: none;
 }
